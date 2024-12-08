@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成语文生图展示</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .idiom-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .pinyin {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .prompts {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .prompts ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .image-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .process {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="idiom-card">
+        <h1>破釜沉舟</h1>
+        <div class="pinyin">pò fǔ chén zhōu</div>
+
+        <div class="prompts">
+            <h3>文生图提示词：</h3>
+            <ul>
+                <li>Close-up,showing the spectacle of flames engulfing the warship.</li>
+                <li>The fire shines on the waves,and the whole picture is dominated by red and orange.</li>
+                <li>Sparks,smoke rising,The interweaving of waves and flames creates a strong visual impact.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="C:\Users\卢东方\Desktop\pofuchenzhou.png" alt="破釜沉舟">
+        </div>
+
+        <div class="process">
+            <h3>生成过程：</h3>
+            <p>
+                使用liblib进行创作
+            </p>
+            <ul>
+                <li>负面提示词：ng_deepnegative_v1_75t,(badhandv4:1.2),EasyNegative,(worst quality:2)</li>
+                <li>采用Euler采样器，设置30步采样以确保图像质量</li>
+                <li>重点优化火光和水面的自然互动效果</li>
+                <li>提示词着重强调画面的光影效果</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
